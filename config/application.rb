@@ -17,3 +17,4 @@ module Eatable
     # the framework and any gems in your application.
   end
 end
+config.i18n.default_locale = :ja
