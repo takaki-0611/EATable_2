@@ -34,6 +34,14 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
 
 
       t.string :name
+      t.string :first_name
+      t.string :last_name
+      t.string :kana_first_name
+      t.string :kana_last_name
+      t.string :postal_code
+      t.string :address
+      t.string :phone_nember
+      t.boolean :is_deleted
 
       t.timestamps null: false
     end

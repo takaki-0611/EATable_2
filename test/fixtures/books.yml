@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  course_id: 1
+  day: 2022-01-09
+  time: 2022-01-09 12:52:30
+  headcount: 1
+
+two:
+  user_id: 1
+  course_id: 1
+  day: 2022-01-09
+  time: 2022-01-09 12:52:30
+  headcount: 1
