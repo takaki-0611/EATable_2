@@ -10,4 +10,8 @@ class Public::CoursesController < ApplicationController
 
   def destroy
   end
+
+  def courses_params
+    params.require(:course).permit(:name, :price, :is_booked, :rest_id)
+  end
 end
