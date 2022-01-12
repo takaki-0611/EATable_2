@@ -12,8 +12,8 @@ Rails.application.routes.draw do
       patch 'out'
     end
   end
-  resources :restaurants, only:[:index, :show]
-  resources :courses, only:[:index, :show] do
+  resources :restaurants, only:[:index, :show, :edit, :update]
+  resources :courses, only:[:index, :show, :edit, :update, :destroy] do
     resources :books, only:[:new, :create, :index, :show] do
       collection do
         post 'confirm'
@@ -27,6 +27,7 @@ Rails.application.routes.draw do
       get 'done'
     end
   end
+  # admin側
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
