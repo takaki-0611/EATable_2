@@ -17,9 +17,6 @@ class Public::BooksController < ApplicationController
     @orders = current_customer.books
   end
 
-  def show
-  end
-
   private
   def book_params
     params.require(:book).permit(:day, :time, :restaurant)
